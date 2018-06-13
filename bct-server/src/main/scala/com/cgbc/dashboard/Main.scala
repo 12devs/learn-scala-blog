@@ -60,6 +60,8 @@ object Main extends App with StrictLogging {
         DBs.closeAll()
         modules.system.terminate()
         logger.info("Server stopped")
+
+        
       }
   }
 }
