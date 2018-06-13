@@ -1,0 +1,46 @@
+version: '3.1'
+services:
+  db:
+    image: postgres:10.1
+    environment:
+      - POSTGRES_PASSWORD=linux
+    volumes:
+      - ${PWD}/_docker/db/create_db.sh:/docker-entrypoint-initdb.d/create_db.sh
+      - ${PWD}/_docker/db:/tmp/db
+      - ${PWD}/_docker/work/var/postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+            bct:
+
+  pgadmin:
+    image: chorss/docker-pgadmin4
+    environment:
+      - SERVER_MODE=false
+    ports:
+      - "5050:5050"
+#    volumes:
+#        - ./_docker/work/home:/data
+    networks:
+            bct:
+  nginx:
+      image: nginx:1.11.10-alpine
+      volumes:
+          - ./_docker/nginx/nginx-dev.template:/etc/nginx/conf.d/default.conf
+      extra_hosts:
+          - "devhost:${DEV_HOST_IP}"
+      ports:
+          - "80:80"
+
+  redirect:
+    image: geldim/https-redirect
+    ports:
+      - "6942:80"
+    restart: always
+
+networks:
+    bct:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 10.5.0.0/24

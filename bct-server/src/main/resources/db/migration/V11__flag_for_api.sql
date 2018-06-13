@@ -1,0 +1,1 @@
+ALTER TABLE components ADD COLUMN api_enabled BOOLEAN DEFAULT FALSE;

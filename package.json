@@ -1,0 +1,22 @@
+{
+  "name": "bct-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^4.16.0"
+  },
+  "scripts": {
+    "dev:init": "docker-compose up -d",
+    "dev:reset": "docker-compose down && rm -rf _docker/work && docker-compose up -d",
+    "dev:reset-linux": "docker-compose down && sudo rm -rf _docker/work && docker-compose up -d",
+    "dev:restart": "docker-compose down && docker-compose up -d"
+  },
+  "dependencies": {
+    "@types/redux-first-router": "^1.10.2",
+    "history": "^4.7.2",
+    "moment": "^2.20.1",
+    "node-sass-chokidar": "0.0.3",
+    "redux-first-router": "0.0.16-next",
+    "redux-first-router-link": "^1.4.2"
+  }
+}
