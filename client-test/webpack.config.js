@@ -53,6 +53,21 @@ module.exports = {
                     },
                 }),
             },
+            {
+                test: /\.css$/,
+                include: /src/,
+                loader: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: {
+                        loader: 'css-loader',
+                    },
+                }),
+            },
+            {
+                test: /\.scss$/,
+                exclude: /node_modules/,
+                loaders: ['style-loader', 'css-loader', 'sass-loader'],
+            },
             // Loading glyphicons => https://github.com/gowravshekar/bootstrap-webpack
             // Using here url-loader and file-loader
             {

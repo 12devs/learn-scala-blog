@@ -24,6 +24,7 @@ export const articlesMockData: ArticleEntity[] = [
         "\"But what we can say is that it's too warm for Antarctica today. It's about half a degree Celsius warmer than the continent can withstand and it's melting about five metres of ice from its base each year, and that's what's triggering the sea-level contribution that we're seeing,\" he told BBC News.",
         comments: []
     },
+
     {
         id: 2,
         title: "Pompeo: Sanctions will stay until nukes go, US tells North Korea",
@@ -75,5 +76,74 @@ export const articlesMockData: ArticleEntity[] = [
                 mainText: "krasivoooooooooo"
             }
         ]
+    },
+    {
+        id: 5,
+        title: "Antarctica loses three trillion tonnes of ice in 25 years",
+        mainText: "Antarctica is shedding ice at an accelerating rate.\n" +
+        "\n" +
+        "Satellites monitoring the state of the White Continent indicate some 200 billion tonnes a year are now being lost to the ocean as a result of melting.\n" +
+        "\n" +
+        "This is pushing up global sea levels by 0.6mm annually - a three-fold increase since 2012 when the last such assessment was undertaken.\n" +
+        "\n" +
+        "Scientists report the new numbers in the journal Nature.\n" +
+        "\n" +
+        "Governments will need to take account of the information and its accelerating trend as they plan future defences to protect low-lying coastal communities.\n" +
+        "\n" +
+        "The researchers say the losses are occurring predominantly in the West of the continent, where warm waters are getting under and melting the fronts of glaciers that terminate in the ocean.\n" +
+        "\n" +
+        "Mission launches to weigh Earth's water\n" +
+        "Biggest ever Antarctic field campaign\n" +
+        "Giant iceberg splits from Antarctic\n" +
+        "\"We can't say when it started - we didn't collect measurements in the sea back then,\" explained Prof Andrew Shepherd, who leads the Ice sheet Mass Balance Inter-comparison Exercise (Imbie).\n" +
+        "\n" +
+        "\"But what we can say is that it's too warm for Antarctica today. It's about half a degree Celsius warmer than the continent can withstand and it's melting about five metres of ice from its base each year, and that's what's triggering the sea-level contribution that we're seeing,\" he told BBC News.",
+        comments: []
+    },
+    {
+        id: 6,
+        title: "Antarctica loses three trillion tonnes of ice in 25 years",
+        mainText: "Antarctica is shedding ice at an accelerating rate.\n" +
+        "\n" +
+        "Satellites monitoring the state of the White Continent indicate some 200 billion tonnes a year are now being lost to the ocean as a result of melting.\n" +
+        "\n" +
+        "This is pushing up global sea levels by 0.6mm annually - a three-fold increase since 2012 when the last such assessment was undertaken.\n" +
+        "\n" +
+        "Scientists report the new numbers in the journal Nature.\n" +
+        "\n" +
+        "Governments will need to take account of the information and its accelerating trend as they plan future defences to protect low-lying coastal communities.\n" +
+        "\n" +
+        "The researchers say the losses are occurring predominantly in the West of the continent, where warm waters are getting under and melting the fronts of glaciers that terminate in the ocean.\n" +
+        "\n" +
+        "Mission launches to weigh Earth's water\n" +
+        "Biggest ever Antarctic field campaign\n" +
+        "Giant iceberg splits from Antarctic\n" +
+        "\"We can't say when it started - we didn't collect measurements in the sea back then,\" explained Prof Andrew Shepherd, who leads the Ice sheet Mass Balance Inter-comparison Exercise (Imbie).\n" +
+        "\n" +
+        "\"But what we can say is that it's too warm for Antarctica today. It's about half a degree Celsius warmer than the continent can withstand and it's melting about five metres of ice from its base each year, and that's what's triggering the sea-level contribution that we're seeing,\" he told BBC News.",
+        comments: []
+    },
+    {
+        id: 7,
+        title: "Antarctica loses three trillion tonnes of ice in 25 years",
+        mainText: "Antarctica is shedding ice at an accelerating rate.\n" +
+        "\n" +
+        "Satellites monitoring the state of the White Continent indicate some 200 billion tonnes a year are now being lost to the ocean as a result of melting.\n" +
+        "\n" +
+        "This is pushing up global sea levels by 0.6mm annually - a three-fold increase since 2012 when the last such assessment was undertaken.\n" +
+        "\n" +
+        "Scientists report the new numbers in the journal Nature.\n" +
+        "\n" +
+        "Governments will need to take account of the information and its accelerating trend as they plan future defences to protect low-lying coastal communities.\n" +
+        "\n" +
+        "The researchers say the losses are occurring predominantly in the West of the continent, where warm waters are getting under and melting the fronts of glaciers that terminate in the ocean.\n" +
+        "\n" +
+        "Mission launches to weigh Earth's water\n" +
+        "Biggest ever Antarctic field campaign\n" +
+        "Giant iceberg splits from Antarctic\n" +
+        "\"We can't say when it started - we didn't collect measurements in the sea back then,\" explained Prof Andrew Shepherd, who leads the Ice sheet Mass Balance Inter-comparison Exercise (Imbie).\n" +
+        "\n" +
+        "\"But what we can say is that it's too warm for Antarctica today. It's about half a degree Celsius warmer than the continent can withstand and it's melting about five metres of ice from its base each year, and that's what's triggering the sea-level contribution that we're seeing,\" he told BBC News.",
+        comments: []
     }
 ];
