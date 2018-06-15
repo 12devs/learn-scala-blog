@@ -1,6 +1,7 @@
 import * as React from "react";
 import {ArticleEntity} from "../../model/article";
 import {ArticleElementComponent} from "./articleElement";
+import './article.scss'
 
 interface Props {
     articleList: ArticleEntity[];
@@ -16,14 +17,15 @@ export class ArticleComponent extends React.Component<Props, {}> {
     render() {
         return (
             <div>
-                <h2>I"m the Main page</h2>
-                {
+                <div className="site__wrapper">
+                    {
 
-                    this.props.articleList.map((article: ArticleEntity) =>
-                        <ArticleElementComponent key={article.id} article={article}/>
-                    )
-                }
-                <br/>
+                        this.props.articleList.map((article: ArticleEntity) =>
+                            <ArticleElementComponent key={article.id} article={article}/>
+                        )
+                    }
+                    <br/>
+                </div>
             </div>
         );
     }
