@@ -11,6 +11,7 @@ import {LoginContainer} from './pages/login';
 import {ArticleListContainer} from './pages/article-list';
 import {ArticleContainer} from "./pages/main/articleContainer";
 import {ArticleOneContainer} from "./pages/article";
+import {ArticleComponent} from "./pages/article-list-with-server/article";
 
 
 let store = createStore(
@@ -32,6 +33,7 @@ ReactDOM.render(
                     <Route path="articles" component={ArticleContainer}/>
                     <Route path="login" component={LoginContainer}/>
                     <Route path="article-list" component={ArticleListContainer}/>
+                    <Route path="article-list-for-server" component={ArticleComponent}/>
                     <Route path="article/:id" component={ArticleOneContainer}/>
                 </Route>
             </Router>

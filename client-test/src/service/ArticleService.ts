@@ -1,15 +1,11 @@
 import axios from 'axios';
+import {ArticleForServerEntity} from "../model/articleForServer";
 
-export interface IArticle {
-    id: string;
-    title: string;
-    mainText: string;
-}
 
 export namespace ArticleService {
-    export function getArticles(): Promise<IArticle[]> {
+    export function getArticles(): Promise<ArticleForServerEntity[]> {
         return axios.get('/api/1/articles')
-            .then(response => response.data as IArticle[]);
+            .then(response => response.data as ArticleForServerEntity[]);
     }
 
     /* export function createUser(newUser: NewUser): Promise<User> {

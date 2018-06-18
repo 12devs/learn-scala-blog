@@ -12,6 +12,8 @@ export const App = (props: { children? }) => {
                     <Link to="/">Login</Link>
                     {' '}
                     <Link to="/article-list">Article List</Link>
+                    {' '}
+                    <Link to="/article-list-for-server">Article List From Server</Link>
                 </div>
             </header>
             <div style={{marginTop: '1.5em'}}>{props.children}</div>
