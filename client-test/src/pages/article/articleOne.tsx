@@ -20,9 +20,9 @@ export class ArticleOneComponent extends React.Component<Props, {}> {
     render() {
         return (
             <div>
-                <h2>{articlesMockData[this.props.params.id].title}</h2>
+                <h1 className="article-title">{articlesMockData[this.props.params.id].title}</h1>
                 <h2>{this.props.params.id}</h2>
-                {articlesMockData[this.props.params.id].mainText}
+                <div className="main-text">{articlesMockData[this.props.params.id].mainText}</div>
                 <br/>
                 <h2>{
                     articlesMockData[this.props.params.id].comments.map((comment: CommentEntity) =>
